@@ -60,7 +60,8 @@ void SnakeGame::updateSnake() {
 
     // based on the direction, compute the new head of the snake
     // by getting the current head, altering it, and adding it.
-    Pair<int> head = // TODO: finish the code here.
+
+    Pair<int> head = // TODO: get the head of the snake from the queue.
 
     int x, y;
     switch (dir) {
@@ -115,7 +116,10 @@ void SnakeGame::detectTarget() {
     //    use the following code to erase the target.
     //    drawSymbol(target.getFirst(), target.getSecond(), NamedSymbol::none,
     //           NamedColor::red);
-    //    call plantTarget() to put the target down again in a new random location.
+    //    add this line so that the snake will grow in length
+    //       skipDeletingTailNodesCount = 1;
+    //    call plantTarget() to put the target down again in a new random
+    //        location.
 }
 
 // check if snake ate itself! Yuk!
